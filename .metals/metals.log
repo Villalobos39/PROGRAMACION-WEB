@@ -1,0 +1,21 @@
+[0m2021.02.26 13:38:03 INFO  Started: Metals version 0.10.0 in workspace 'C:\Users\villa\djcrm' for client vscode 1.53.2.[0m
+[0m2021.02.26 13:38:10 INFO  time: initialize in 6.94s[0m
+[0m2021.02.26 13:38:14 WARN  Build server is not auto-connectable.[0m
+[0m2021.02.26 13:38:14 WARN  no build tool detected in workspace 'C:\Users\villa\djcrm'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.02.26 15:09:37 INFO  shutting down Metals[0m
+[0m2021.02.26 21:00:02 INFO  Started: Metals version 0.10.0 in workspace 'C:\Users\villa\djcrm' for client vscode 1.53.2.[0m
+[0m2021.02.26 21:00:12 INFO  time: initialize in 10s[0m
+[0m2021.02.26 21:00:16 WARN  Build server is not auto-connectable.[0m
+[0m2021.02.26 21:00:16 WARN  no build tool detected in workspace 'C:\Users\villa\djcrm'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+feb 26, 2021 9:30:35 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTraceNotification
+feb 26, 2021 9:31:02 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTraceNotification
+feb 26, 2021 9:31:19 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTraceNotification
+[0m2021.02.26 22:18:37 INFO  shutting down Metals[0m
+[0m2021.02.26 23:33:31 INFO  Started: Metals version 0.10.0 in workspace 'C:\Users\villa\djcrm' for client vscode 1.53.2.[0m
+[0m2021.02.26 23:33:41 INFO  time: initialize in 9.88s[0m
+[0m2021.02.26 23:33:54 WARN  Build server is not auto-connectable.[0m
+[0m2021.02.26 23:33:54 WARN  no build tool detected in workspace 'C:\Users\villa\djcrm'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.02.26 23:34:38 INFO  shutting down Metals[0m
