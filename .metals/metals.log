@@ -69,3 +69,7 @@ INFORMACIÓN: Unsupported notification method: $/setTraceNotification
 [0m2021.03.01 23:39:28 WARN  no build tool detected in workspace 'C:\Users\villa\djcrm'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
 mar 02, 2021 12:25:04 A. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFORMACIÓN: Unsupported notification method: $/setTraceNotification
+[0m2021.03.02 14:26:56 INFO  Started: Metals version 0.10.0 in workspace 'C:\Users\villa\djcrm' for client vscode 1.53.2.[0m
+[0m2021.03.02 14:27:17 INFO  time: initialize in 21s[0m
+[0m2021.03.02 14:27:30 WARN  Build server is not auto-connectable.[0m
+[0m2021.03.02 14:27:30 WARN  no build tool detected in workspace 'C:\Users\villa\djcrm'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
