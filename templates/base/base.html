@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>{% block title %}{% endlock %}</title>
+    <title>{% block title %}{% endblock %}</title>
 
     <!-- Custom fonts for this template-->
     <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
@@ -154,6 +154,7 @@
             <div id="content">
 
                 <!-- Topbar -->
+                {% block topbar %}
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
                     <!-- Sidebar Toggle (Topbar) -->
@@ -176,6 +177,7 @@
                     </form>
 
                     <!-- Topbar Navbar -->
+                     
                     <ul class="navbar-nav ml-auto">
 
                         <!-- Nav Item - Search Dropdown (Visible Only XS) -->
@@ -355,6 +357,7 @@
                     </ul>
 
                 </nav>
+                    {% endblock %}
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
@@ -368,9 +371,11 @@
                 <!-- /.container-fluid -->
 
             </div>
+            {% endblock %}
             <!-- End of Main Content -->
-            {% endlock %}
+        
             <!-- Footer -->
+            {% block Footer %}
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
@@ -378,6 +383,7 @@
                     </div>
                 </div>
             </footer>
+            {% endblock %}
             <!-- End of Footer -->
 
         </div>

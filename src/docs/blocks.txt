@@ -1,0 +1,9 @@
+ base block
+ - endblock 
+-  block title 
+ - block sides
+ -block content
+-  block footer 
+- block topbar
+<! –– {% block topbar %} {% endblock %}
+
