@@ -9,5 +9,3 @@ urlpatterns = [
     path('list/', views.list, name="list"),
     # path('listusers/', views.ListUsers.as_view(), name="listusers"),
 ]
-
-
