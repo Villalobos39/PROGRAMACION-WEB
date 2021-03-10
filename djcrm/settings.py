@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     'home',
+    'principal',
+    'leads',
 ]
 
 MIDDLEWARE = [
@@ -75,23 +77,27 @@ WSGI_APPLICATION = 'djcrm.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 #    'django.db.backends.postgresql',
+# postgresql_psycopg2
+# psycopg2-binary2
 #C:\Users\villa\VENV\Lib\site-packages\django\db\backends\postgresql
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'mydatabase',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': '36939',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
-#   'default': {
- #       'ENGINE': 'django.db.backends.postgresql',
-  #      'NAME': 'mydatabase',
-   #     'USER': 'mydatabaseuser',
-    #    'PASSWORD': 'mypassword',
-     #   'HOST': '127.0.0.1',
-      #  'PORT': '5432',
-   # }
-#}
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': 'mydatabase',
+#     } 
+# }   
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -134,3 +140,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static-storage",
 ]
+
+AUTH_USER_MODEL = "leads.User"

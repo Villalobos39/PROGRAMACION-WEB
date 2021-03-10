@@ -1,0 +1,21 @@
+Modeling Data
+
+Lead Model
+_id_lead (serial automatic)
+- name charField
+- email charField
+- age integerField
+- phone CharField
+- agent (foreign key agent)
+- register timestamp datetimeField(auto_new_add= true)
+- register update  datetimeField(auto_now=true)
+- marketing_strategy charField()-choices 
+- captured_leads boolean boolean
+
+agent model
+_id_lead (serial automatic)
+- user (FK User)
+
+
+
+User model (django's user model)

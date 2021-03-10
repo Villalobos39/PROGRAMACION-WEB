@@ -1,0 +1,31 @@
+VENV\SCRIPTS\ACTIVATE
+CD DJCRM
+python manage.py runserver
+
+python --version
+cd PROGRAMACION
+py -m venv WEB
+
+nombredetuentorno\Scripts\activate
+
+pip install Django==3.1.7
+pip freeze
+
+django-admin startproject nombredelproyecto
+python manage.py runserver
+python manage.py startapp  nombredelaapp
+
+*****CDM WINDOWS*******
+
+cls : limpiar 
+exit : salir
+help: ayuda
+cd: abrir
+Dir : contenido
+Move <origen><destino>
+Del: <archivo> eliminar 
+Md <Nombrecarpeta>
+Tree<Carpeta>
+Type
+
+***************************

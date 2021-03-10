@@ -1,0 +1,20 @@
+{% extends "base/base.html"%}
+{% block title %}TEMPLATE 0006 {% endblock %}
+
+{% block content %}
+    <h1> {{ message}} </h1>
+  
+    <table class="table">
+    {% for num in numbers %}
+        <tr>
+            <td> LUNES {{ num }}</td>
+            <td> MARTES {{ num }}</td>
+            <td> MIERCOLES {{ num }}</td>
+            <td> JUEVES  {{ num }}</td>
+            <td> VIERNES {{ num }}</td>
+            <td> SABADO {{ num }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+
+{% endblock %}
