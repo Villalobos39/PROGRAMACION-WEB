@@ -8,5 +8,5 @@ class Anime(models.Model):
     publicacion = models.CharField(max_length=30)
     temporadas = models.CharField(max_length=10)
 
-    def _str_(self):
+    def __str__(self):
         return self.nombre

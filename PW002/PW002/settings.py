@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'home',
     'home_comida'
 ]
 
@@ -131,3 +130,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
 BASE_DIR / "static-storage",
 ]
+
+##AUTH_USER_MODEL = "home_comida.User"

@@ -1,0 +1,29 @@
+{% extends "base/base.html" %}
+{% block title%} LISTA DE REGISTROS {% endblock %}
+{% block content %}
+<table class="table">
+    <thead class="table thead-dark">
+        <th> RESTAURANTE  </th>
+        <th> CORREO  </th>
+        <th> COMIDA </th>
+        <th> ORDEN </th>
+        <th></th>  
+        <th></th>
+        <th></th>
+        <th></th>
+    </thead>
+    
+    {% for homes in object_list %}
+    <tr> 
+        <td>{{ homes.Restaurante }}  </td>
+        <td>{{ homes.Correo_Local }}</td>
+        <td> {{ homes.nombre }}</td>
+        <td> {{ homes.cantidad }}</td>
+        <td><a href="{% url 'home_comida:detail_leads' homes.pk %}"><i class="fas fa-edit" style="color: #FF7F00;">DETALLE </i></a></td>
+        <td><a href="{% url 'home_comida:update_leads' homes.pk %}"><i class="fas fa-upload" style="color: #00FF00;">ACTUALIZAR</i></a></td>
+        <td><a href="{% url 'home_comida:delete_leads' homes.pk %}"><i class="fas fa-trash"  style="color: #00FFFF;">BORRAR </i></a></td>
+        <td><a href="{% url 'home_comida:create_leads'%}"><i class="fas fa-dove fa" style="color: #4F2F4F;"></i></a></td>       
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base/base.html" %}
+{% block title %} DELETE LEADS {% endblock title %}
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Submit</button> <br>
+    <button type="reset">Cancel</button>
+    <br>
+</form>
+{% endblock content %}
+

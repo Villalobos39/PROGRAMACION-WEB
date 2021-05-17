@@ -136,3 +136,4 @@ STATICFILES_DIRS = [
 BASE_DIR / "static-storage",
 ]
 
+#AUTH_USER_MODEL = "home.User"

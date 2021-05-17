@@ -7,5 +7,5 @@ class Paisajes(models.Model):
     turismo = models.CharField(max_length=30)
     artifical_natural = models.CharField(max_length=10)
 
-    def _str_(self):
+    def __str__(self):
         return self.nombre

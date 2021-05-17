@@ -8,5 +8,5 @@ class Bebida(models.Model):
     tienda = models.CharField(max_length=30)
     Vence = models.CharField(max_length=10)
 
-    def _str_(self):
+    def __str__(self):
         return self.marca

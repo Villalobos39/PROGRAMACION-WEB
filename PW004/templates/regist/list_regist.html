@@ -1,0 +1,29 @@
+{% extends "base/base.html" %}
+{% block title%} LISTA DE REGISTROS {% endblock %}
+{% block content %}
+<h1>REGISTRO DE ALUMNOS</h1>
+<table class="table">
+    <thead class="table thead-dark">
+        <th> NOMBRE  </th>
+        <th> APELLIDO  </th>
+        <th> NO.CONTROL </th>
+        <th> EDAD </th>       
+        <th></th>  
+        <th></th>
+        <th></th>
+        <th></th>
+    </thead>
+    {% for homes in object_list %}
+    <tr> 
+        <td>{{ homes.nombre }}  </td>
+        <td>{{ homes.apellido }}</td>
+        <td> {{ homes.no_control }}</td>
+        <td> {{ homes.edad }}</td>
+        <td><a href="{% url 'home_name:detail_leads' homes.pk %}"><i class="fas fa-edit" style="color: #FF7F00;">DETALLE </i></a></td>
+        <td><a href="{% url 'home_name:update_leads' homes.pk %}"><i class="fas fa-upload" style="color: #00FF00;">ACTUALIZAR</i></a></td>
+        <td><a href="{% url 'home_name:delete_leads' homes.pk %}"><i class="fas fa-trash"  style="color: #00FFFF;">BORRAR </i></a></td>
+        <td><a href="{% url 'home_name:create_leads'%}"><i class="fas fa-dove fa" style="color: #4F2F4F;"></i></a></td>       
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

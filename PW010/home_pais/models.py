@@ -6,5 +6,5 @@ class Pais(models.Model):
     Visitar = models.CharField(max_length=30)
     Trasnporte = models.CharField(max_length=30)
     
-    def _str_(self):
+    def __str__(self):
         return self.nombre

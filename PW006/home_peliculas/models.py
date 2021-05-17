@@ -7,5 +7,5 @@ class Pelis(models.Model):
     Estreno = models.CharField(max_length=30)
     Comentario = models.CharField(max_length=100)
 
-    def _str_(self):
+    def __str__(self):
         return self.nombre

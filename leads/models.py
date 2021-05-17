@@ -13,7 +13,7 @@ class User(AbstractUser):
 class Agent(models.Model):
     user = models.OneToOneField(User, on_delete = models.CASCADE)
 
-    def _str_(self):
+    def __str__(self):
         return self.user.username
 
 class Lead(models.Model):
@@ -37,5 +37,5 @@ class Lead(models.Model):
     contacted = models.BooleanField(default=False)
     captured = models.BooleanField(default=False)
 
-    def _str_(self):
+    def __str__(self):
         return self.frist_name

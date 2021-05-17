@@ -14,3 +14,4 @@ class Index(generic.TemplateView):
         'numbers': numbers,
     }
     return render(request, "home/index.html", context)
+
