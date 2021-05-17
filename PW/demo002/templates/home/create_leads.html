@@ -1,0 +1,16 @@
+{% extends "base/base.html" %}
+{% block title %} CREATE LIST {% endblock title %}
+{% block content %}
+<div class="container"> 
+    <div class="row"> 
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-primary" type="submit">Submit</button> <br>
+            <button class="btn btn-warning"  type="reset">Cancel</button>
+            <br>
+        </form>
+    </div>
+</div>
+{% endblock content %}
+

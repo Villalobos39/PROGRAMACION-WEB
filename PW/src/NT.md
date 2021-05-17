@@ -1,0 +1,1 @@
+content  = forms.charField(label= "" , widget=forms.Textarea(atr={"placeholder": "", "class"}))

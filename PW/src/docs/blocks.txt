@@ -1,0 +1,18 @@
+ base block
+ - endblock 
+-  block title 
+ - block sides
+ -block content
+-  block footer 
+- block topbar
+<! –– {% block topbar %} {% endblock %}
+
+   <table class="table">
+    {% for num in numbers %}
+        <tr>
+            <td>{{ num }}</td>
+            <td>{{ num }}</td>
+            <td>{{ num }}</td>
+        </tr>
+    {% endfor %}
+    </table>
