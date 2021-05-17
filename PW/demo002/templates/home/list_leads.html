@@ -1,0 +1,32 @@
+{% extends "base/base.html" %}
+{% block content %}
+
+<table class="table">
+    <thead class="table thead-dark">
+    <th>Lead Name</th>
+    <th>Last Name</th>
+    <th>Agent Name</th>
+    <th>Marketing </th>
+    <th>Registro</th>  
+    <th></th>  
+    <th></th>
+    <th></th>
+    <th></th>
+    </thead>
+    {% for lead in object_list %}
+    <tr> 
+        <td>{{ lead.frist_name }}  </td>
+        <td>{{ lead.last_name }}</td>
+        <td>{{ lead.agent }}</td>
+        <td>{{ lead.marketing_strategy }}</td>
+        <td>{{ lead.register_timestamp}}</td>
+        <td><a href="{% url 'home:detail_leads' lead.pk %}"><i class="fas fa-edit" style="color: #FF7F00;">DETALLE </i></a></td>
+        <td><a href="{% url 'home:update_leads' lead.pk %}"><i class="fas fa-upload" style="color: #00FF00;">ACTUALIZAR</i></a></td>
+        <td><a href="{% url 'home:delete_leads' lead.pk %}"><i class="fas fa-trash"  style="color: #00FFFF;">BORRAR </i></a></td>
+        <td><a href="{% url 'home:create_leads'%}"><i class="fas fa-dove fa" style="color: #4F2F4F;"></i></a></td>       
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}
+
